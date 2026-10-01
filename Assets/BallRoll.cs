@@ -5,9 +5,10 @@ public class BallRoll : MonoBehaviour
 {
     public float force = 10f;
     private Rigidbody rb;
+    private Vector3 startPosition; 
     void Start()
     {
-
+        startPosition = transform.position;
         rb = GetComponent<Rigidbody>();    
     }
 
@@ -26,4 +27,13 @@ public class BallRoll : MonoBehaviour
 
         rb.AddForce(direction * force);
     }
+    public void Respawn()
+    {
+        rb.linearVelocity = Vector3.zero;
+        rb.angularVelocity = Vector3.zero;
+        transform.position = startPosition;
+
+        Debug.Log("Respawned");
+    }
 }
+    
