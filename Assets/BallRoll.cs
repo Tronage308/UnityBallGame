@@ -1,3 +1,5 @@
+using System;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -25,7 +27,8 @@ public class BallRoll : MonoBehaviour
 
         Vector3 direction = new Vector3(x, 0f, z).normalized;
 
-        rb.AddForce(direction * force);
+        rb.AddForce(direction * (MathF.Sin(Time.time * 0.5f) * force));
+        Debug.Log(MathF.Sin(Time.time * 0.5f) * force);
     }
     public void Respawn()
     {

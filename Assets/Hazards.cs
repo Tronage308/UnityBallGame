@@ -1,16 +1,15 @@
 using UnityEngine;
 
-public class Hazards : MonoBehaviour
+public class Hazard : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private void OnTriggerEnter(Collider other)
     {
-        
-    }
+        BallRoll player = other.GetComponent<BallRoll>();
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (player != null)
+        {
+            player.Respawn();
+        }
+
     }
 }
