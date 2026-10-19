@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 
 public class BallRoll : MonoBehaviour
 {
-    public float force = 10f;
+    public float force = 20f;
     private Rigidbody rb;
     private Vector3 startPosition; 
     void Start()
@@ -27,8 +27,8 @@ public class BallRoll : MonoBehaviour
 
         Vector3 direction = new Vector3(x, 0f, z).normalized;
 
-        rb.AddForce(direction * (MathF.Sin(Time.time * 0.5f) * force));
-        Debug.Log(MathF.Sin(Time.time * 0.5f) * force);
+        rb.AddForce(direction * (Mathf.Clamp((MathF.Sin(Time.time * 0.5f) * force), 5, 20)));
+        Debug.Log(Mathf.Clamp((MathF.Sin(Time.time * 0.5f) * force), 5, 20));
     }
     public void Respawn()
     {
