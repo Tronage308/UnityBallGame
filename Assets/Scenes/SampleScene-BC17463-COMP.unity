@@ -238,8 +238,8 @@ Transform:
   m_GameObject: {fileID: 1026734}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.6181, y: -98.3, z: 30.198}
-  m_LocalScale: {x: 11643.81, y: -6.189258, z: 440535.44}
+  m_LocalPosition: {x: -2.6181, y: -98.3, z: 29.571}
+  m_LocalScale: {x: 11643.81, y: -6.189258, z: 29883248}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -990,10 +990,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 55947689}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 180c9c4ca8a34c643b76fc2621f63a6e, type: 3}
+  m_Script: {fileID: 11500000, guid: 2a3e5e90510713b4a803cf475b6d2830, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Push
-  FORCE: 400
+  FORCE: 900
 --- !u!1 &60264243
 GameObject:
   m_ObjectHideFlags: 0
@@ -3258,7 +3258,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 180c9c4ca8a34c643b76fc2621f63a6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Push
-  FORCE: 50
 --- !u!64 &440939636
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3362,10 +3361,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 440939634}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec34fb508bbb18344a310b122de5db5f, type: 3}
+  m_Script: {fileID: 11500000, guid: 2a3e5e90510713b4a803cf475b6d2830, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Jump
-  FORCE: 900
+  FORCE: 500
 --- !u!1001 &451555308
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6558,6 +6557,7 @@ GameObject:
   - component: {fileID: 824411336}
   - component: {fileID: 824411335}
   - component: {fileID: 824411334}
+  - component: {fileID: 824411339}
   m_Layer: 0
   m_Name: Plane (42)
   m_TagString: Untagged
@@ -6577,7 +6577,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 180c9c4ca8a34c643b76fc2621f63a6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Push
-  FORCE: 500
 --- !u!64 &824411335
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6625,7 +6624,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e50fc2404cbb46f4bb322c39580bfe34, type: 2}
+  - {fileID: 2100000, guid: d0809acb342379847ba0b0b7cc29a374, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6666,12 +6665,25 @@ Transform:
   m_GameObject: {fileID: 824411333}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 27.84, y: 4.39, z: -43.28}
-  m_LocalScale: {x: 0.19713601, y: 0.19713601, z: 0.19713601}
+  m_LocalPosition: {x: 27.41, y: 4.39, z: -43.28}
+  m_LocalScale: {x: 0.23372446, y: 0.23372446, z: 0.23372446}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &824411339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 824411333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32fdc61694e9ff1488b73ffb24d2357a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Jump
+  FORCE: 400
 --- !u!1 &826036832
 GameObject:
   m_ObjectHideFlags: 0
@@ -6701,7 +6713,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 826036832}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec34fb508bbb18344a310b122de5db5f, type: 3}
+  m_Script: {fileID: 11500000, guid: 32fdc61694e9ff1488b73ffb24d2357a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Push
   FORCE: 44
@@ -6752,7 +6764,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e50fc2404cbb46f4bb322c39580bfe34, type: 2}
+  - {fileID: 2100000, guid: d0809acb342379847ba0b0b7cc29a374, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8015,6 +8027,7 @@ GameObject:
   - component: {fileID: 953974631}
   - component: {fileID: 953974630}
   - component: {fileID: 953974629}
+  - component: {fileID: 953974634}
   m_Layer: 0
   m_Name: Plane (41)
   m_TagString: Untagged
@@ -8034,7 +8047,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec34fb508bbb18344a310b122de5db5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Push
-  FORCE: 500
 --- !u!64 &953974630
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8129,6 +8141,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 14.581}
+--- !u!114 &953974634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 953974628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a3e5e90510713b4a803cf475b6d2830, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Push
+  FORCE: 60
 --- !u!1 &964254521
 GameObject:
   m_ObjectHideFlags: 0
@@ -10743,6 +10768,7 @@ GameObject:
   - component: {fileID: 1410593002}
   - component: {fileID: 1410593001}
   - component: {fileID: 1410593000}
+  - component: {fileID: 1410593005}
   m_Layer: 0
   m_Name: Plane (40)
   m_TagString: Untagged
@@ -10759,10 +10785,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1410592999}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 180c9c4ca8a34c643b76fc2621f63a6e, type: 3}
+  m_Script: {fileID: 11500000, guid: e5242e213ced79e4996431e5dc27f8e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Push
-  FORCE: 500
 --- !u!64 &1410593001
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10857,6 +10882,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 14.581}
+--- !u!114 &1410593005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1410592999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a3e5e90510713b4a803cf475b6d2830, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Push
+  FORCE: 60
 --- !u!1 &1413696993
 GameObject:
   m_ObjectHideFlags: 0
@@ -11404,7 +11442,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1539237038}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec34fb508bbb18344a310b122de5db5f, type: 3}
+  m_Script: {fileID: 11500000, guid: 32fdc61694e9ff1488b73ffb24d2357a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Jump
   FORCE: 600
@@ -12412,7 +12450,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec34fb508bbb18344a310b122de5db5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Jump
-  FORCE: 900
 --- !u!114 &1652763493
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12422,10 +12459,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1652763491}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 180c9c4ca8a34c643b76fc2621f63a6e, type: 3}
+  m_Script: {fileID: 11500000, guid: 32fdc61694e9ff1488b73ffb24d2357a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Push
-  FORCE: 50
+  FORCE: 600
 --- !u!64 &1652763494
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13178,10 +13215,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1844711513}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 180c9c4ca8a34c643b76fc2621f63a6e, type: 3}
+  m_Script: {fileID: 11500000, guid: 2a3e5e90510713b4a803cf475b6d2830, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Push
-  FORCE: 100000
+  FORCE: 1000
 --- !u!64 &1844711515
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14557,10 +14594,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2125396750}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec34fb508bbb18344a310b122de5db5f, type: 3}
+  m_Script: {fileID: 11500000, guid: 32fdc61694e9ff1488b73ffb24d2357a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Jump
-  FORCE: 600
+  FORCE: 50
 --- !u!64 &2125396752
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14608,7 +14645,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e50fc2404cbb46f4bb322c39580bfe34, type: 2}
+  - {fileID: 2100000, guid: d0809acb342379847ba0b0b7cc29a374, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
